@@ -17,4 +17,4 @@ eos-format-pinyin  = \n
 ; fan
 node-format-fan = %m/%f[6]\s
 unk-format-fan = %m/unk\s
-eos-format-fan  = \n\s
+eos-format-fan  = \n
