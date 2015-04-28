@@ -1,0 +1,20 @@
+cost-factor = 800
+bos-feature = BOS/EOS,*,*,*,*,*,*
+eval-size = 7
+unk-eval-size = 4
+config-charset = UTF-8
+
+; pos
+node-format-pos = %m/%f[1]\s
+unk-format-pos = %m/unk\s
+eos-format-pos  = \n
+
+; pinyin
+node-format-pinyin = %m/%f[5]\s
+unk-format-pinyin = %m/unk\s
+eos-format-pinyin  = \n
+
+; fan
+node-format-fan = %m/%f[6]\s
+unk-format-fan = %m/unk\s
+eos-format-fan  = \n\s

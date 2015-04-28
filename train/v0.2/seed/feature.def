@@ -1,0 +1,87 @@
+# POS Unigram
+UNIGRAM U1:%F[0]
+UNIGRAM U2:%F[0],%F?[1]
+UNIGRAM U3:%F[0],%F[1],%F[2]
+
+# Word-POS
+UNIGRAM W0:%F[4]
+UNIGRAM W1:%F[0]/%F[4]
+UNIGRAM W2:%F[1]/%F[4]
+UNIGRAM W3:%F[2]/%F[4]
+UNIGRAM W4:%F[0],%F?[1]/%F[4]
+UNIGRAM W5:%F[1],%F?[2]/%F[4]
+UNIGRAM W6:%F[0],%F[1],%F?[2]/%F[4]
+
+# Word-Freq
+UNIGRAM WF0:%F[3]
+UNIGRAM WF1:%F[3]/%F[4]
+
+# POS-Freq
+UNIGRAM PF1:%F[0]/%F[3]
+UNIGRAM PF2:%F[1]/%F[3]
+UNIGRAM PF3:%F[0],%F?[1]/%F[3]
+UNIGRAM PF4:%F[1],%F?[2]/%F[3]
+UNIGRAM PF5:%F[0],%F[1],%F?[2]/%F[3]
+
+# Read-POS
+UNIGRAM RP0:%F[5]
+UNIGRAM RP1:%F[0]/%F[5]
+UNIGRAM RP2:%F[1]/%F[5]
+UNIGRAM RP3:%F[2]/%F[5]
+UNIGRAM RP4:%F[0],%F?[1]/%F[5]
+UNIGRAM RP5:%F[1],%F?[2]/%F[5]
+UNIGRAM RP6:%F[0],%F[1],%F?[2]/%F[5]
+
+# Fan-POS
+UNIGRAM RP0:%F[6]
+UNIGRAM RP1:%F[0]/%F[6]
+UNIGRAM RP2:%F[1]/%F[6]
+UNIGRAM RP3:%F[2]/%F[6]
+UNIGRAM RP4:%F[0],%F?[1]/%F[6]
+UNIGRAM RP5:%F[1],%F?[2]/%F[6]
+UNIGRAM RP6:%F[0],%F[1],%F?[2]/%F[6]
+
+# Word-Read-POS
+UNIGRAM R1:%F[4],%F[5]
+UNIGRAM R2:%F[0],%F[4],%F[5]
+UNIGRAM R3:%F[1],%F[4],%F[5]
+UNIGRAM R4:%F[2],%F[4],%F[5]
+UNIGRAM R5:%F[0],%F?[1],%F[4],%F[5]
+UNIGRAM R6:%F[1],%F?[2],%F[4],%F[5]
+UNIGRAM R7:%F[0],%F[1],%F?[2],%F[4],%F[5]
+
+# Word-Fan-POS
+UNIGRAM F1:%F[4],%F[6]
+UNIGRAM F2:%F[0],%F[4],%F[6]
+UNIGRAM F3:%F[1],%F[4],%F[6]
+UNIGRAM F4:%F[2],%F[4],%F[6]
+UNIGRAM F5:%F[0],%F?[1],%F[4],%F[6]
+UNIGRAM F6:%F[1],%F?[2],%F[4],%F[6]
+UNIGRAM F7:%F[0],%F[1],%F?[2],%F[4],%F[6]
+
+# char type
+UNIGRAM T0:%t
+UNIGRAM T1:%F[0]/%t
+UNIGRAM T2:%F[0],%F?[1]/%t
+UNIGRAM T3:%F[0],%F[1],%F?[2]/%t
+UNIGRAM T4:%F[0],%F[1],%F[2],%F?[3]/%t
+UNIGRAM T5:%F[0],%F[1],%F[2],%F[3],%F[4]/%t
+
+#
+# bigram
+#
+
+BIGRAM B00:%L[0]/%R[0]
+BIGRAM B01:%L[0],%L?[1]/%R[0]
+BIGRAM B02:%L[0]/%R[0],%R?[1]
+BIGRAM B03:%L[0]/%R[0],%R[1],%R?[2]
+BIGRAM B04:%L[0],%L?[1]/%R[0],%R[1],%R?[2]
+BIGRAM B05:%L[0]/%R[0],%R[1],%R[2],%R?[3]
+BIGRAM B06:%L[0],%L?[1]/%R[0],%R[1],%R[2],%R?[3]
+BIGRAM B07:%L[0],%L[1],%L?[2]/%R[0]
+BIGRAM B08:%L[0],%L[1],%L?[2]/%R[0],%R?[1]
+BIGRAM B09:%L[0],%L[1],%L[2],%L?[3]/%R[0]
+BIGRAM B10:%L[0],%L[1],%L[2],%L?[3]/%R[0],%R?[1]
+BIGRAM B11:%L[0],%L[1],%L?[2]/%R[0],%R[1],%R?[2]
+BIGRAM B12:%L[0],%L[1],%L?[2]/%R[0],%R[1],%R[2],%R?[3]
+BIGRAM B13:%L[0],%L[1],%L[2],%L?[3]/%R[0],%R[1],%R?[2]

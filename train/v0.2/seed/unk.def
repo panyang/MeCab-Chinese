@@ -1,0 +1,11 @@
+DEFAULT,0,0,0,unk,unk,*,*,*,*,*
+SPACE,0,0,0,unk,unk,*,*,*,*,*
+KANJI,0,0,0,unk,unk,*,*,*,*,*
+SYMBOL,0,0,0,unk,unk,*,*,*,*,*
+NUMERIC,0,0,0,unk,unk,*,*,*,*,*
+ALPHA,0,0,0,unk,unk,*,*,*,*,*
+HIRAGANA,0,0,0,unk,unk,*,*,*,*,*
+GREEK,0,0,0,unk,unk,*,*,*,*,*
+CYRILLIC,0,0,0,unk,unk,*,*,*,*,*
+KANJINUMERIC,0,0,0,unk,unk,*,*,*,*,*
+KATAKANA,0,0,0,unk,unk,*,*,*,*,*
