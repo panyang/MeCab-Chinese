@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pinyin
+Version: 0.9
+Summary: hanzi -> pinyin,With Python
+Home-page: http://github.com/cleverdeng/pinyin.py
+Author: cleverdeng
+Author-email: cleverdeng@gmail.com
+License: MIT License
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
