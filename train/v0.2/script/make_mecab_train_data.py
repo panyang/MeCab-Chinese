@@ -1,7 +1,9 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # Author: 52nlpcn@gmail.com
 # Copyright 2015 @ NLPJob
+
+#bug fixed : can be use with pyenv environment
+#update: this is Python3 script
 
 import codecs
 import sys
@@ -45,7 +47,7 @@ def make_mecab_train_data(input_file, output_file):
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
-        print "pls use: python make_mecab_train_data.py input output"
+        print("pls use: python make_mecab_train_data.py input output")
         sys.exit()
     input_file = sys.argv[1]
     output_file = sys.argv[2]
