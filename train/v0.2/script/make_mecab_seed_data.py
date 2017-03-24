@@ -1,7 +1,10 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # Author: 52nlpcn@gmail.com
 # Copyright 2015 @ NLPJob
+
+#bug fixed : can be use with pyenv environment
+#update: this is Python3 script
+#Please modify the pinyin.py of https://github.com/cleverdeng/pinyin.py to Python3 by frederic89
 
 import codecs
 import sys
@@ -34,15 +37,13 @@ def make_mecab_seed_data(input_file, output_file):
             pword = words[0]
         fword = Converter('zh-hant').convert(words[0])
         tag = make_word_4tag(words[0])
-        output_data.write(words[0] + ",0,0,0," + words[1][0] + "," +
-                words[1] + "," + tag + "," + str(len(words[0])) + "," +
-                words[0] + "," + pword + "," + fword + "\n")
+        output_data.write(words[0] + ",0,0,0," + words[1][0] + "," + words[1] + "," + tag + "," + str(len(words[0])) + "," + words[0] + "," + pword + "," + fword + "\n")
     input_data.close()
     output_data.close()
 
 if __name__ == '__main__':
     if len(sys.argv) < 3:
-        print "pls use: python make_mecab_seed_data.py input output"
+        print("pls use: python make_mecab_seed_data.py input output")
         sys.exit()
     input_file = sys.argv[1]
     output_file = sys.argv[2]
